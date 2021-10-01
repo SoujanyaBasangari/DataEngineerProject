@@ -44,3 +44,11 @@ Structure the data in that way so that the data science team is able to perform 
 ## You will notice that the input data contains “date and time” columns. Your colleagues want to evaluate data also on hour-level and day of week-level. Does that affect your output-structure in some way?
 
       Without changing the output structure, this kind of questions can be answered by using datetime functions on table. To make transparent to answer this question pickuphour hour and dropoffhour columns are added. Structure can be further modified by adding week column as well.Right now to answer questions with respective to week i have used datetime functions
+
+## Your data scientists want to make future predictions based on weather conditions. How would you expand your pipeline to help your colleagues with this task?
+   Predict functionlity can be added to existing pipeline. Prediction new task can be added to etl process using sparkML or any other python libraries. If we consider performance in point and want to keep ETL process different from prediction/analysis, a separate flow can be added to the existing flow.
+   
+## Another colleague approaches to you. He is an Excel guru and makes all kind of stuff using this tool forever. So he needs all the available taxi trip records in the XLSX format. Can you re-use your current pipeline? How does this output compares to your existing formats? Do you have performance concerns?
+
+Existing formats are csv. At the end, the data is loaded to csv and database. 
+As we are already performing transformations in current flow. Adding one more transformation approach might decrease the performance. Everytime ETL flow is getting triggered we can implement another flow which gets available trip records and loads data as XLSX format
