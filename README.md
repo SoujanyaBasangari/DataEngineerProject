@@ -11,27 +11,27 @@ The yellow and green taxi trip records include fields capturing pick-up and drop
                         conda activate prefect_env     
 	conda install -c conda-forge prefect
      
-        * extract —Extract Datasets from cloud using pyspark and create two separate datasets for yellow taxi and green taxi datasets.Add taxitype column while extracting to dataframe
-        * transform —Add pickup_hour and dropoff_hour columns for yellow_dataset and green_dataset. Transform datasets to column oriented and row oriented and save in the path
-        * load — Merge both sets and load data to SQL server
+Extract —Extract Datasets from cloud using pyspark and create two separate datasets for yellow taxi and green taxi datasets.Add taxitype column while extracting to dataframe
+Transform —Add pickup_hour and dropoff_hour columns for yellow_dataset and green_dataset. Transform datasets to column oriented and row oriented and save in the path
+Load — Merge both sets and load data to SQL server
                   
 
 ## Utilized Prefect to declare tasks, flows, parameters, schedules and handle failures(./01-TLCData_prefect.ipynb)
-      Developed a Scheduled Data Pipeline with Prefect
+Developed a Scheduled Data Pipeline with Prefect
 
 ## Run Prefect in Saturn Cloud(./02-TLCData_prefect-cloud.ipynb)
-     Connect to Prefect Cloud and orchestrate a flow running from Saturn Cloud.
+Connect to Prefect Cloud and orchestrate a flow running from Saturn Cloud.
 
 # Execution Steps:
-     *  To Test ETL locally, execute below commands in anaconda prompt
+*  To Test ETL locally, execute below commands in anaconda prompt
                         conda activate prefect_env
 			python ETL_local.py (replace path with local path)
-    *   To start, sign up for a free version of a Prefect Cloud account.
-    *   Upload project to cloud or  create a project and name it TLCData.
-    *   Before going over to Saturn Cloud, you’ll have to create an API key in Prefect that will connect the two. You’ll find the API Key option under settings.
-    *   Create a  Saturn Cloud  free account.
-    *   Open a JupyterLab instance by clicking on the button, Update APi keys in TLCData_prefect.ipynb and TLCData_prefect-cloud.ipynb
-    *   Run the project and check overview in prefect
+*   To start, sign up for a free version of a Prefect Cloud account.
+*   Upload project to cloud or  create a project and name it TLCData.
+*   Before going over to Saturn Cloud, you’ll have to create an API key in Prefect that will connect the two. You’ll find the API Key option under settings.
+*   Create a  Saturn Cloud  free account.
+*   Open a JupyterLab instance by clicking on the button, Update APi keys in TLCData_prefect.ipynb and TLCData_prefect-cloud.ipynb
+*   Run the project and check overview in prefect
 
 # Questions
 
