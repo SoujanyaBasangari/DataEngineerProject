@@ -1,4 +1,4 @@
-# The following steps are performed for building data pipeline for TLCDataset
+# The following steps are performed for building data pipeline for TLCDataset 
 
 ## Understanding DataSet
 TLC has published millions of trip records from both yellow medallion taxis and green SHLs. Publicizing trip record data through an open platform permits instant access to records which previously were available only through a formal process (FOIL request.) The TLC does not collect any information regarding its passengers.
@@ -16,7 +16,8 @@ Extract —Extract Datasets from cloud using pyspark and create two separate dat
 Transform —Add pickup_hour and dropoff_hour columns for yellow_dataset and green_dataset. Transform datasets to column oriented and row oriented and save in the path
 
 Load — Merge both sets and load data to SQL server
-                  
+       
+And further automating the etl process. I have used prefect
 
 ## Utilized Prefect to declare tasks, flows, parameters, schedules and handle failures(./01-TLCData_prefect.ipynb)
 Developed a Scheduled Data Pipeline with Prefect
