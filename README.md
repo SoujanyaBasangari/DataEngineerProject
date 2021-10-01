@@ -12,7 +12,9 @@ The yellow and green taxi trip records include fields capturing pick-up and drop
 	conda install -c conda-forge prefect
      
 Extract —Extract Datasets from cloud using pyspark and create two separate datasets for yellow taxi and green taxi datasets.Add taxitype column while extracting to dataframe
+
 Transform —Add pickup_hour and dropoff_hour columns for yellow_dataset and green_dataset. Transform datasets to column oriented and row oriented and save in the path
+
 Load — Merge both sets and load data to SQL server
                   
 
