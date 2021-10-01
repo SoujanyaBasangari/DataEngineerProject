@@ -30,9 +30,9 @@ The yellow and green taxi trip records include fields capturing pick-up and drop
     *   To start, sign up for a free version of a Prefect Cloud account.
     *   Upload project to cloud or  create a project and name it TLCData.
     *   Before going over to Saturn Cloud, you’ll have to create an API key in Prefect that will connect the two. You’ll find the API Key option under settings.
-    *    Create a  Saturn Cloud  free account.
-    *    Open a JupyterLab instance by clicking on the button, Update APi keys in TLCData_prefect.ipynb and TLCData_prefect-cloud.ipynb
-    *    Run the project and check overview in prefect
+    *   Create a  Saturn Cloud  free account.
+    *   Open a JupyterLab instance by clicking on the button, Update APi keys in TLCData_prefect.ipynb and TLCData_prefect-cloud.ipynb
+    *   Run the project and check overview in prefect
 
 # Questions
 
