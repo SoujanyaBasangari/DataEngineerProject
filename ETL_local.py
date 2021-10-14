@@ -156,9 +156,9 @@ def prefect_flow():
     with Flow(name='simple_etl_pipeline') as flow:
         param_url = Parameter(name='p_url', required=True)
 
-        users = extract(url=param_url)
-        df_users = transform(users)
-        load(data=df_users, path=f'C:/Users/Desktop/users_{int(datetime.now().timestamp())}.csv')
+        yellow_df,green_df = extract(url=param_url)
+        taxi_df = transform(yellow_df,green_df )
+        load(data=taxi_df, path=f'C:/Users/Desktop/users_{int(datetime.now().timestamp())}.csv')
 
     return flow
 
